@@ -17,6 +17,3 @@
 #pagebreak()
 #include "chapter/chapter02.typ"
 #pagebreak()
-
-
-
