@@ -72,5 +72,40 @@
     #v(1.5fr)
 
   ]
-  // pagebreak()
+}
+
+
+#let notation-column(items) = {
+  table(
+    columns: (auto, 1fr),
+    align: (center, left),
+    stroke: none,
+    inset: (x: 6pt, y: 4pt),
+
+    ..items.flatten(),
+  )
+}
+
+#let notation-table(items) = {
+  let n = items.len()
+  let mid = calc.ceil(n / 2)
+
+  let left = items.slice(0, mid)
+  let right = items.slice(mid)
+
+  grid(
+    columns: (1fr, 1fr),
+    column-gutter: 30pt,
+
+    notation-column(left), notation-column(right),
+  )
+}
+
+#let appendix-heading-numbering(letter) = (..nums) => {
+  let pos = nums.pos()
+  if pos.len() == 1 {
+    letter
+  } else {
+    letter + "." + pos.slice(1).map(str).join(".")
+  }
 }

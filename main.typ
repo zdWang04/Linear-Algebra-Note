@@ -12,7 +12,7 @@
 
 // 排版设置
 //// 自然段空格
-#set par(first-line-indent: 1em, justify: true)
+// #set par(first-line-indent: 1em, justify: true)
 //// 数学公式居中
 #show math.equation.where(block: true): eq => block(
   width: 100%,
@@ -42,9 +42,8 @@
 
 
 //// 附录
-#counter(heading).update(0)
-#set heading(numbering: "A.1")
-#set-theorion-numbering("A.1")
 
 #include "contents/appendix/appendixA.typ"
+#include "contents/appendix/appendixB.typ"
+
 // #pagebreak()
