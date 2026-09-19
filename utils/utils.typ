@@ -78,7 +78,7 @@
 #let notation-column(items) = {
   table(
     columns: (auto, 1fr),
-    align: (center, left),
+    align: (left, left),
     stroke: none,
     inset: (x: 6pt, y: 4pt),
 
@@ -94,7 +94,7 @@
   let right = items.slice(mid)
 
   grid(
-    columns: (1fr, 1fr),
+    columns: (1fr, 2fr),
     column-gutter: 30pt,
 
     notation-column(left), notation-column(right),

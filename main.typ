@@ -38,6 +38,7 @@
 
 //// 正文
 #include "contents/chapters/chapter01.typ"
+#include "contents/chapters/chapter02.typ"
 
 
 
