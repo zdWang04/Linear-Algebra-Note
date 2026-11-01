@@ -15,8 +15,8 @@
 // #set par(first-line-indent: 1em, justify: true)
 //// 数学公式居中
 #show math.equation.where(block: true): eq => block(
-  width: 100%,
-  align(center, eq),
+    width: 100%,
+    align(center, eq),
 )
 
 // 使用QED符号
@@ -26,10 +26,10 @@
 
 //// 封面
 #note-cover(
-  title: "线性代数笔记",
-  subtitle: "Note to《Linear Algebra Done Right》by Sheldon Axler",
-  author: "zdWang04",
-  date: [2026年9月17日],
+    title: "线性代数笔记",
+    subtitle: "Note to《Linear Algebra Done Right》by Sheldon Axler",
+    author: "zdWang04",
+    date: [2026年9月17日],
 )
 
 //// 目录
@@ -39,6 +39,7 @@
 //// 正文
 #include "contents/chapters/chapter01.typ"
 #include "contents/chapters/chapter02.typ"
+#include "contents/chapters/chapter03.typ"
 
 
 
