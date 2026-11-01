@@ -1,7 +1,8 @@
 #import "@preview/theorion:0.6.0": *
 #import "../../utils/utils.typ": (
-  appendix-heading-numbering, make_appendix_corollary, make_appendix_definition, make_appendix_lemma,
-  make_appendix_property, make_appendix_theorion,
+    appendix-heading-numbering, make_appendix_corollary,
+    make_appendix_definition, make_appendix_lemma, make_appendix_property,
+    make_appendix_theorion,
 )
 
 #counter(heading).update(0)
