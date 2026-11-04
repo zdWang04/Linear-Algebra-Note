@@ -354,7 +354,7 @@
 ]
 
 #note-block[
-    集合与向量空间有许多可以类比的地方
+    集合与向量空间有许多可以类比的地方，如下图
     #figure(
         image("../../assets/chap2_set_vectorspace_comparison.png"),
         caption: "集合-向量空间概念对比",
